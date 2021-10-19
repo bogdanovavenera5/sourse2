@@ -48,6 +48,7 @@ const forms = () => {
     });
 
 
+   
 
     form.forEach(item => {
         item.addEventListener('submit', (e) => {
@@ -69,10 +70,10 @@ const forms = () => {
 
             let textMessage = document.createElement('div');
             textMessage.textContent = message.loading;
-            statusMessage.appendChild(textMessage);
-
-
-            const formData = new FormData(item);
+            statusMessage.appendChild(textMessage);           
+        
+            const formData = new FormData(item);           
+             
             let api;
             item.closest('.popup-design') || item.classList.contains('calc_form') ? api = path.designer : api = path.question;
             console.log(api);

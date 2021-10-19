@@ -96,10 +96,8 @@ const modals = () => {
 
             if (!btnPressed && (window.pageYOffset + document.documentElement.clientHeight >= scrollHeight)) {
                 document.querySelector(selector).click();
-
             }
         });
-
     }
 
     bindModal('.button-design', '.popup-design', '.popup-design .popup-close');
